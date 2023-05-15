@@ -1,0 +1,48 @@
+/* Variables */
+$brand-light-color: #ffffff;
+$white-color-1: #f4effc;
+$purple-color: #1f1235;
+$purple-color-1: #301e4e;
+$purple-color-2: #a17fc9;
+$purple-color-3: #463366;
+$pink-color: #e7d7f6;
+$pink-color-1: #e2daeb;
+$gray-color: rgba(255, 255, 255, 0.44);
+$black-box-shadow: rgba(0, 0, 0, 0.25);
+$red-color: #b7364a;
+$red-color-1: #ff6e6c;
+$secondary-font: "Source Sans Pro" !important;
+$fw400: 400; 
+$fw500: 500; 
+$fw600: 600; 
+$fw700: 700; 
+$fweight700: 400;
+$f12: 12px;
+$f13: 13px;
+$f14: 14px;
+$f15: 15px;
+$f16: 16px;
+$f17: 17px;
+$f18: 18px;
+$f20: 20px;
+$f21: 21px;
+$f24: 24px;
+$f25: 25px;
+$f32: 32px;
+$f35: 35px;
+$f40: 40px;
+$f62: 62px;
+$f99: 99px;
+
+
+@mixin for-tablet-landscape {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}

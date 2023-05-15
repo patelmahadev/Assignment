@@ -1,0 +1,30 @@
+@import "../../variable.scss";
+.lookingDriveWrapper {
+  padding: 72px 0;
+  background: $purple-color-1;
+  margin-bottom: 16px;
+  @include for-tablet-landscape {
+    padding: 40px 0;
+  }
+  @include for-phone-only {
+    padding: 12px;
+  }
+  .MuiTypography-h1 {
+    font-weight: $fw700;
+    font-size: $f99;
+    line-height: 132px;
+    @include for-tablet-landscape {
+      font-size: $f62;
+      line-height: 83px;
+    }
+    @include for-phone-only {
+      font-size: $f40;
+      line-height: 53px;
+    }
+    color: $purple-color-2;
+    a {
+      color: $red-color-1;
+      margin-left: 15px;
+    }
+  }
+}

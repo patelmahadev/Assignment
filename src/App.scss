@@ -1,0 +1,30 @@
+@import "./variable.scss";
+
+.MuiGrid-container {
+  padding: 0 72px;
+  @include for-tablet-landscape {
+    padding: 0 40px;
+  }
+}
+.section-title.MuiTypography-h1 {
+  font-weight: $fw700;
+  font-size: $f99;
+  line-height: 132px;
+  font-family: "Playfair Display";
+  @include for-tablet-landscape {
+    font-weight: $fw700;
+    font-size: $f62;
+    line-height: 83px;
+  }
+  @include for-phone-only {
+    font-size: $f40;
+    line-height: 53px;
+  }
+}
+
+.common-pageHeading{
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

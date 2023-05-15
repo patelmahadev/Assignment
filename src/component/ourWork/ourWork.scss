@@ -1,0 +1,106 @@
+@import "../../variable.scss";
+.ourWorkWrapper {
+  padding: 24px 0;
+  background: $purple-color-1;
+  .portfolioImg {
+    margin-bottom: 12px;
+    @include for-phone-only {
+      margin-bottom: 8px;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  .MuiTypography-h1 {
+    color: $pink-color-1;
+    margin-bottom: 12px;
+    .MuiTypography-span {
+      display: block;
+    }
+  }
+  .MuiTypography-subtitle {
+    font-weight: $fw400;
+    font-size: $f17;
+    line-height: 21px;
+    color: $red-color-1;
+    font-family: $secondary-font;
+    margin-bottom: 14px;
+    display: block;
+    @include for-phone-only {
+      font-weight: $fw400;
+      font-size: $f12;
+      line-height: 15px;
+      margin-bottom: 2px;
+    }
+  }
+  .MuiTypography-body1 {
+    font-weight: $fw400;
+    font-size: 35px;
+    line-height: 44px;
+    letter-spacing: 0.0025em;
+    color: $brand-light-color;
+    margin-bottom: 48px;
+    font-family: $secondary-font;
+    @include for-tablet-landscape {
+      font-weight: $fw400;
+      font-size: $f25;
+      line-height: 31px;
+    }
+    @include for-phone-only {
+      font-weight: $fw400;
+      font-size: $f14;
+      line-height: 18px;
+      margin-bottom: 32px;
+    }
+  }
+  .MuiTypography-body2 {
+    font-weight: $fw400;
+    font-size: 49px;
+    line-height: 65px;
+    color: $pink-color;
+    margin-bottom: 14px;
+    @include for-tablet-landscape {
+      font-weight: $fw400;
+      font-size: $f35;
+      line-height: 47px;
+    }
+    @include for-phone-only {
+      font-weight: $fw700;
+      font-size: $f32;
+      line-height: 43px;
+      margin-bottom: 4px;
+    }
+  }
+  .MuiButton-root {
+    background: $red-color-1;
+    border-radius: 12px;
+    font-weight: $fw600;
+    font-size: $f20;
+    line-height: 25px;
+    color: $brand-light-color;
+    padding: 20px 36px;
+    @include for-tablet-landscape {
+      padding: 16px 32px;
+      font-weight: $fw600;
+      font-size: $f18;
+      line-height: 23px;
+      margin-bottom: 50px;
+    }
+    &.mobileNone {
+      @include for-tablet-landscape {
+        display: none;
+      }
+    }
+    &.desktopNone {
+      display: none;
+      @include for-tablet-landscape {
+        display: block;
+        width: 100%;
+        padding: 11px;
+        font-size: $f15;
+        line-height: 19px;
+        border-radius: 8px;
+      }
+    }
+  }
+}

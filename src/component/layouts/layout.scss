@@ -1,0 +1,210 @@
+@import "../../variable.scss";
+
+.appWrapper {
+  &.MuiAppBar-root {
+    background: $brand-light-color;
+    padding: 48px 0 24px;
+    box-shadow: none;
+    @include for-phone-only {
+      padding-bottom: 12px;
+    }
+  }
+  .logoWrapper {
+    width: 44px;
+    height: 44px;
+    img {
+      width: 100%;
+    }
+  }
+  .text-end {
+    float: right;
+    display: flex;
+    align-items: center;
+    .MuiList-root {
+      display: flex;
+      padding: 0;
+      @include for-phone-only {
+        display: none;
+      }
+      .MuiListItem-root {
+        font-weight: $fw400;
+        font-size: $f35;
+        line-height: 47px;
+        padding: 0;
+        margin-right: 48px;
+        @include for-tablet-landscape {
+          font-weight: $fw400;
+          font-size: $f25;
+          line-height: 33px;
+        }
+        a {
+          color: $purple-color;
+          text-decoration: none;
+        }
+      }
+    }
+    .sidebarButton {
+      background: $pink-color;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      padding: 0;
+      min-height: auto;
+      .MuiIconButton-root {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+        color: $purple-color-1;
+      }
+    }
+  }
+}
+.footerWrapper {
+  background: $purple-color-1;
+  padding: 80px 0;
+  .footerLogo {
+    font-weight: $fw400;
+    font-size: $f35;
+    line-height: 47px;
+    color: $brand-light-color;
+  }
+  .MuiList-root {
+    &.footerLinks {
+      padding: 0;
+      display: flex;
+      margin-bottom: 28px;
+      justify-content: space-between;
+      width: 100%;
+      @include for-phone-only {
+        flex-wrap: wrap;
+      }
+      .MuiListItem-root {
+        padding: 0;
+        @include for-phone-only {
+          width: 50%;
+        }
+        a {
+          font-weight: $fw500;
+          font-size: $f21;
+          line-height: 28px;
+          color: $brand-light-color;
+          text-decoration: none;
+          @include for-tablet-landscape {
+            font-weight: $fw400;
+            font-size: $f16;
+            line-height: 21px;
+          }
+        }
+      }
+    }
+  }
+  .MuiTypography-subtitle {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 32px;
+    font-weight: $fw400;
+    font-size: $f13;
+    line-height: 16px;
+    font-family: $secondary-font;
+    color: $brand-light-color;
+  }
+  .social-icons {
+    display: flex;
+    align-items: center;
+    @include for-phone-only {
+      justify-content: center;
+    }
+    a {
+      margin-right: 18px;
+    }
+  }
+}
+.sidebarWrapper {
+  background-color: $purple-color-1;
+  .MuiDrawer-paper {
+    max-width: 528px;
+    width: 100%;
+    background: $purple-color-1;
+    @include for-tablet-landscape {
+      width: 480px;
+    }
+    @include for-phone-only {
+      width: 100%;
+    }
+    .sidebarBox {
+      padding: 48px;
+      @include for-tablet-landscape {
+        padding: 48px 24px;
+      }
+
+      .sidebarControl {
+        width: 100%;
+        text-align: right;
+        @include for-phone-only {
+          display: flex;
+          justify-content: space-between;
+        }
+        .sidebarLogo {
+          display: none;
+          @include for-phone-only {
+            display: block;
+          }
+        }
+        .closeBtn {
+          background: $pink-color;
+          width: 44px;
+          height: 44px;
+          font-size: $f24;
+          margin-right: 24px;
+          margin-bottom: 24px;
+          @include for-tablet-landscape {
+            margin-right: 16px;
+          }
+        }
+      }
+      .MuiList-root {
+        .MuiListItem-root {
+          margin-bottom: 2px;
+          a {
+            font-weight: $fw400;
+            font-size: 62px;
+            line-height: 83px;
+            color: $brand-light-color;
+            text-decoration: none;
+            @include for-tablet-landscape {
+              font-size: 49px;
+              line-height: 65px;
+            }
+            @include for-phone-only {
+              font-weight: 700;
+              font-size: 40px;
+              line-height: 53px;
+              color: $pink-color;
+            }
+          }
+        }
+      }
+      .MuiButton-root {
+        background: $red-color-1;
+        border-radius: 12px;
+        font-weight: $fw600;
+        font-size: $f20;
+        line-height: 25px;
+        font-family: "Source Sans Pro" !important;
+        color: #ffffff;
+        width: max-content;
+        padding: 20px 36px;
+        @include for-tablet-landscape {
+          padding: 16px 32px;
+        }
+        @include for-phone-only {
+          font-size: $f15;
+          line-height: 19px;
+          padding: 11px 22px;
+        }
+      }
+    }
+  }
+}

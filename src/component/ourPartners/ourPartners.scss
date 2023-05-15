@@ -1,0 +1,87 @@
+@import "../../variable.scss";
+
+.ourPartnerskWrapper {
+  padding: 80px 0 220px;
+  background: $brand-light-color;
+  @include for-tablet-landscape {
+    padding: 64px 0;
+  }
+  @include for-phone-only {
+    padding: 32px 0;
+  }
+  .portfolioImg {
+    margin-bottom: 12px;
+    @include for-tablet-landscape {
+      margin-bottom: 0;
+      max-width: 100px;
+    }
+    @include for-phone-only {
+      max-width: 48px;
+      margin: 0 auto;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  .MuiTypography-h1 {
+    color: $purple-color-1;
+    margin-bottom: 12px;
+    .MuiTypography-span {
+      display: block;
+    }
+  }
+  .MuiTypography-h4 {
+    font-weight: $fw400;
+    font-size: $f35;
+    line-height: 44px;
+    color: $red-color-1;
+    font-family: $secondary-font;
+    margin-bottom: 64px;
+    @include for-tablet-landscape {
+      font-weight: $fw400;
+      font-size: 25px;
+      line-height: 31px;
+    }
+    @include for-phone-only {
+      font-weight: $fw400;
+      font-size: $f14;
+      line-height: 18px;
+      margin-bottom: 24px;
+    }
+  }
+
+  .MuiTypography-body1 {
+    font-weight: $fw400;
+    font-size: $f35;
+    line-height: 44px;
+    letter-spacing: 0.0025em;
+    color: $purple-color;
+    @include for-tablet-landscape {
+      font-weight: $fw400;
+      font-size: $f25;
+      line-height: 33px;
+    }
+    @include for-phone-only {
+      font-weight: $fw600;
+      font-size: $f15;
+      line-height: 19px;
+    }
+  }
+  .portfolioIconBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    .portfolioDetail {
+      width: 102px;
+      text-align: center;
+      margin: 24px 0 57px;
+      @include for-tablet-landscape {
+        margin: 24px 0;
+      }
+      @include for-phone-only {
+        margin: 12px 0;
+      }
+    }
+  }
+}

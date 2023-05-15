@@ -1,0 +1,133 @@
+@import "../../variable.scss";
+
+.whatWeDoWrapper {
+  padding: 0 0 126px;
+  position: relative;
+  @include for-phone-only {
+    padding-bottom: 32px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("../../assets/whatWeDoBg.png");
+    width: 762px;
+    height: 676px;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-size: contain;
+    @include for-tablet-landscape {
+      width: 500px;
+    }
+    @include for-phone-only {
+      display: none;
+    }
+  }
+  .contentBox {
+    position: relative;
+    &::after {
+      @include for-phone-only {
+        background-color: $pink-color;
+        content: "";
+        position: absolute;
+        width: calc(100% + 80px);
+        height: 100%;
+        top: 0;
+        z-index: -1;
+        left: -40px;
+      }
+    }
+
+    .MuiTypography-h1 {
+      color: $purple-color-3;
+      margin: 70px 0 24px;
+      @include for-tablet-landscape {
+        margin: 103px 0 24px;
+      }
+      @include for-phone-only {
+        margin: 0 0 8px;
+      }
+      .MuiTypography-span {
+        display: block;
+      }
+    }
+    .MuiTypography-body1 {
+      font-weight: $fw400;
+      font-size: $f35;
+      line-height: 44px;
+      letter-spacing: 0.0025em;
+      color: $purple-color-3;
+      font-family: $secondary-font;
+      margin-bottom: 50px;
+      max-width: 450px;
+      @include for-tablet-landscape {
+        font-weight: $fw400;
+        font-size: $f25;
+        line-height: 31px;
+        max-width: 320px;
+      }
+      @include for-phone-only {
+        font-weight: $fw400;
+        font-size: $f14;
+        line-height: 18px;
+        max-width: initial;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .button-wrapper {
+    @include for-tablet-landscape {
+      text-align: center;
+    }
+    @include for-phone-only {
+      text-align: left;
+    }
+    .MuiButton-root {
+      background: $purple-color-1;
+      border-radius: 12px;
+      font-weight: $fw600;
+      font-size: $f20;
+      line-height: 25px;
+      color: $brand-light-color;
+      padding: 20px 36px;
+      @include for-tablet-landscape {
+        font-size: $f18;
+        line-height: 23px;
+        padding: 16px 32px;
+      }
+      @include for-phone-only {
+        font-size: $f15;
+        line-height: 19px;
+        padding: 11px 22px;
+      }
+    }
+  }
+  .MuiList-root {
+    @include for-phone-only {
+      margin-top: 16px;
+    }
+    .MuiListItem-root {
+      padding: 32px 0 32px 12px;
+      font-weight: $fw400;
+      font-size: $f62;
+      line-height: 83px;
+      color: $purple-color-1;
+      margin-bottom: 16px;
+      @include for-tablet-landscape {
+        padding: 24px 0 24px 12px;
+        font-size: $f35;
+        line-height: 47px;
+        justify-content: flex-end;
+      }
+      @include for-phone-only {
+        justify-content: flex-start;
+        margin-bottom: 16px;
+        font-size: $f32;
+        line-height: 43px;
+        padding: 0;
+        font-weight: 700;
+      }
+    }
+  }
+}
